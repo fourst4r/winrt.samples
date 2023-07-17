@@ -1,0 +1,7 @@
+.vs
+x64
+packages
+*.user
+*.filters
+*.idl
+out/
