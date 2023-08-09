@@ -1,8 +1,8 @@
 --class-path src
 --main winrt.myApp.implementation.Main
 
---library winrt.externs
---library winrt.tools
+--class-path ../winrt.externs/src
+--class-path ../winrt.tools/src
 --library reflaxe.cpp
 --define cpp-output=out
 --define cxx-no-null-warnings

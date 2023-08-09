@@ -5,3 +5,4 @@ packages
 *.filters
 *.idl
 out/
+Generated Files/
