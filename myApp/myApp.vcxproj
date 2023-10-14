@@ -111,8 +111,8 @@
     <Manifest Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\out\include\Main.h" />
     <ClInclude Include="..\out\include\_HaxeUtils.h" />
-    <ClInclude Include="..\out\include\winrt_myApp_implementation_Main.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="..\out\include\App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -122,8 +122,8 @@
     <ApplicationDefinition Include="App.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\out\src\Main.cpp" />
     <ClCompile Include="..\out\src\_main_.cpp" />
-    <ClCompile Include="..\out\src\winrt_myApp_implementation_Main.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

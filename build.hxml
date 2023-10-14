@@ -1,5 +1,5 @@
 --class-path src
---main winrt.myApp.implementation.Main
+--main Main
 
 --class-path ../winrt.externs/src
 --class-path ../winrt.tools/src
