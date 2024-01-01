@@ -6,3 +6,5 @@ packages
 *.idl
 out/
 Generated Files/
+dump/
+notes.md

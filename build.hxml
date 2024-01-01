@@ -1,9 +1,10 @@
 --class-path src
---main Main
+--main winrt.myApp.implementation.Main
 
 --class-path ../winrt.externs/src
---class-path ../winrt.tools/src
---library reflaxe.cpp
+--library reflaxe.cpp:git
+--library winrt.tools
 --define cpp-output=out
 --define cxx-no-null-warnings
 --define x64
+--define dump=pretty
