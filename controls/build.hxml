@@ -1,0 +1,9 @@
+--class-path src
+--main Main
+
+--library reflaxe.cpp:git
+--library winrt.externs
+--library winrt.tools
+--define cpp-output=myApp
+--define cxx-no-null-warnings
+--define x64

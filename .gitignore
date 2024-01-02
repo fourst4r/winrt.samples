@@ -2,9 +2,13 @@
 x64
 packages
 *.user
-*.filters
 *.idl
 out/
 Generated Files/
 dump/
 notes.md
+Debug/
+Release/
+*/myApp/include/
+*/myApp/src/
+_GeneratedFiles.txt

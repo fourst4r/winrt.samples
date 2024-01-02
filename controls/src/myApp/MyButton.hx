@@ -9,7 +9,7 @@ using winrt.Extensions;
 @:valueType
 class MyButton extends Button implements IRuntimeClass {
     public function new() {
-        this.Content(winrt.WinRT.boxValue(("MyButton":HString)));
+        super();
+        this.Content(boxValue(("MyButton!":HString)));
     }
-
 }

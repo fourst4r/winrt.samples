@@ -87,7 +87,7 @@
       <WarningLevel>Level4</WarningLevel>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <ForcedIncludeFiles>pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\out\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,12 +116,14 @@
     <Manifest Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\out\include\_HaxeUtils.h" />
-    <ClInclude Include="..\out\include\winrt_myApp_implementation_Main.h" />
-    <ClInclude Include="..\out\include\winrt_myApp_implementation_MainWindow.h" />
-    <ClInclude Include="..\out\include\winrt_myApp_implementation_MyButton.h" />
+    <ClInclude Include="include\Main.h" />
+    <ClInclude Include="include\winrt_myApp_implementation_MainWindow.h" />
+    <ClInclude Include="include\winrt_myApp_implementation_MyButton.h" />
+    <ClInclude Include="include\winrt_WinRT.h" />
+    <ClInclude Include="include\_HaxeUtils.h" />
+    <ClInclude Include="include\_TypeUtils.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="..\out\include\App.xaml.h">
+    <ClInclude Include="include\winrt_myApp_implementation_App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
     </ClInclude>
   </ItemGroup>
@@ -129,25 +131,20 @@
     <ApplicationDefinition Include="App.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\out\src\_main_.cpp" />
-    <ClCompile Include="..\out\src\winrt_myApp_implementation_Main.cpp" />
-    <ClCompile Include="..\out\src\winrt_myApp_implementation_MainWindow.cpp" />
-    <ClCompile Include="..\out\src\winrt_myApp_implementation_MyButton.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\winrt_myApp_implementation_MainWindow.cpp" />
+    <ClCompile Include="src\winrt_myApp_implementation_MyButton.cpp" />
+    <ClCompile Include="src\_main_.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\out\src\App.xaml.cpp">
+    <ClCompile Include="src\winrt_myApp_implementation_App.xaml.cpp">
       <DependentUpon>App.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="..\RuntimeClasses.idl" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="readme.txt">
-      <DeploymentContent>false</DeploymentContent>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png" />
